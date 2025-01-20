@@ -9,8 +9,8 @@ import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Footer from './components/footer/footer';
 import Blog from './pages/Blog';
-import Offer from './pages/Offer';
 import Contact from './pages/Contact';
+import OfferRoutes from './routes/OfferRoutes'; // Importujemy trasę dla sekcji offers
 
 // Dodajemy scroll-to-top funkcjonalność
 const ScrollToTop = () => {
@@ -33,7 +33,7 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/offer" element={<Offer />} />
+          <Route path="/offer/*" element={<OfferRoutes />} /> {/* Obsługujemy trasy związane z ofertą */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
