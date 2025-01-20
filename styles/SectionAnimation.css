@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); /* Początkowy efekt przesunięcia */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Końcowy efekt – litery się ustalają */
+  }
+}
+
+span {
+  display: inline-block; /* Używamy inline-block, by animować każdą literę */
+}
+ 

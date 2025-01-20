@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap');
+body, html {
+  font-family: 'Roboto Mono', monospace;
+  background-color:#1E1E1E ;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Wyłączenie przewijania poziomego */
+  width: 100vw;
+  padding: -12;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: -12;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Code', monospace;
+}
+
+pre, code {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
